@@ -1,0 +1,21 @@
+info:
+  name: Partial Update
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:8080/guitars/0eca8831-ec51-483a-9a4f-80a913055c1c
+  body:
+    type: json
+    data: |-
+      {
+        "is_electric": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
