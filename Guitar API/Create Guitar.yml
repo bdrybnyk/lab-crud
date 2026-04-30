@@ -1,0 +1,24 @@
+info:
+  name: Create Guitar
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/guitars
+  body:
+    type: json
+    data: |-
+      {
+        "brand": "Gibson",
+        "model": "Les Paul Standard",
+        "strings_count": 6,
+        "is_electric": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
